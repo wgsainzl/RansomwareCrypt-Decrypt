@@ -59,7 +59,7 @@ int VisitCrypt(char* path){
         nuovo = fopen(newName, "wb");
         encrypt(old,nuovo,key,iv);
         #ifdef DEBUG
-        printf("criptato\n");
+        printf("encrypted\n");
         #endif
         deleteFile(toVisit);
         fclose(old);
@@ -100,7 +100,7 @@ int VisitDecrypt(char* path){
         nuovo = fopen(newName, "wb");
         decrypt(old,nuovo,key,iv);
         #ifdef DEBUG
-        printf("decriptato\n");
+        printf("decrypted\n");
         #endif
         deleteFile(toVisit);
         fclose(old);
