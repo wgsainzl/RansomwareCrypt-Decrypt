@@ -13,3 +13,10 @@ to do it in debian/ubuntu:
 `~$ bin/main crypt [PathToEncrypt]`
 - To decrypt a directory (and its sub-directory)  
 `~$ bin/main decrypt [PathToDecrypt]`
+
+### Usage Example
+- mkdir Prueba
+- echo "Texto recuperado: La encriptación y el descifrado funcionan perfectamente." > Prueba/x.py
+- ./ransomware_exec crypt Prueba
+
+### decrypt can be used, it does remove .crypt, but files do not get onto their original status/
